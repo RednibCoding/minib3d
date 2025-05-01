@@ -415,8 +415,6 @@ Type TSurface
 	End Method
 		
 	Method UpdateNormals()
-	
-		Rem
 		Local norm_map:TMap=New TMap
 
 		For Local t=0 Until no_tris
@@ -502,9 +500,7 @@ Type TSurface
 			vert_norm#[v*3+1]=norm.y ' VertexNormal(v,norm.x,norm.y,norm.z)
 			vert_norm#[v*3+2]=norm.z ' VertexNormal(v,norm.x,norm.y,norm.z)
 					
-		Next
-		End Rem
-	
+		Next	
 	End Method
 		
 	Method TriangleNX#(tri_no:Int)
