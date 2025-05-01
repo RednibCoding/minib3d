@@ -171,6 +171,8 @@ Type TSprite Extends TMesh
 	
 		scale_x#=s_x#
 		scale_y#=s_y#
+		sx# = scale_x
+		sz# = scale_y
 	
 	End Method
 	
