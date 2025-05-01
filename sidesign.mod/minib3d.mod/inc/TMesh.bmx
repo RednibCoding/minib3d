@@ -1180,9 +1180,9 @@ Type TMesh Extends TEntity
 			Local surf:TSurface=GetSurface( s )
 			
 			'If USE_C
-				C_UpdateNormals(surf.no_tris,surf.no_verts,surf.tris,surf.vert_coords,surf.vert_norm)
+				' C_UpdateNormals(surf.no_tris,surf.no_verts,surf.tris,surf.vert_coords,surf.vert_norm)
 			'Else
-				'surf.UpdateNormals()
+				surf.UpdateNormals()
 			'EndIf
 			
 			' mesh state has changed - update reset flags

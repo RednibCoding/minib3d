@@ -4,8 +4,8 @@ End Rem
 'Module sidesign.minib3d
 'ModuleInfo "Version: 0.52"
 'ModuleInfo "Main Author: Simon Harrison (simonh@blitzbasic.com). Includes routines by various authors."
-'ModuleInfo "License: You are free to use this code as you please"
-'ModuleInfo "Please see readme.txt for more details"
+'ModuleInfo "License: You are free To use this code as you please"
+'ModuleInfo "Please see readme.txt For more details"
 
 Strict
 
@@ -19,12 +19,11 @@ Import BRL.Retro
 
 ' c++
 Import "inc/std.cpp"
-Import "inc/misc.cpp"		' contains C_UpdateNormals and C_IntersectTriangle
 Import "inc/collision.cpp"	' contains functions used by TCollisionB.bmx
 Import "inc/tree.cpp"		' contains functions used by TCollisionB.bmx
 Import "inc/geom.cpp"		' contains functions used by TCollisionB.bmx
 
-' global
+' Global
 Include "inc/TGlobal.bmx"
 
 ' entity
@@ -124,8 +123,8 @@ Extern
 					
 End Extern
 
-Const USE_MAX2D=True	' true to enable max2d/minib3d integration
-Const USE_VBO=True	' true to use vbos if supported by hardware
-Const VBO_MIN_TRIS=250	' if USE_VBO=True and vbos are supported by hardware, then surface must also have this minimum no. of tris before vbo is used for surface (vbos work best with surfaces with high amount of tris)
-Const LOG_NEW=False	' true to write to debuglog when new minib3d object created
-Const LOG_DEL=False	' true to write to debuglog when minib3d object destroyed
+Const USE_MAX2D=True	' True To enable max2d/minib3d integration
+Const USE_VBO=True	' True To use vbos If supported by hardware
+Const VBO_MIN_TRIS=250	' If USE_VBO=True And vbos are supported by hardware, Then surface must also have this minimum no. of tris before vbo is used For surface (vbos work best with surfaces with high amount of tris)
+Const LOG_NEW=False	' True To write To DebugLog when New minib3d Object created
+Const LOG_DEL=False	' True To write To DebugLog when minib3d Object destroyed
